@@ -1,0 +1,6 @@
+title: Empty Nest Holdings
+url: https://emptynestholdings.com
+baseurl: ""
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag

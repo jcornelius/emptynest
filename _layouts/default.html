@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="Empty Nest Holdings builds and invests in software companies.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  {% seo %}
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --accent: #4a2070;
+      --accent-light: #5c2d91;
+      --bg: #f7f7f7;
+      --text: #2d2d2d;
+      --text-muted: #6b6b6b;
+      --card-bg: #ffffff;
+      --card-border: #e8e8e8;
+      --max-width: 720px;
+    }
+
+    html {
+      font-size: 18px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      font-family: 'Aleo', Georgia, serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+    }
+
+    .hero {
+      padding: 5rem 1.5rem 3rem;
+      text-align: center;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.02em;
+    }
+
+    .tagline {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      font-style: italic;
+    }
+
+    section {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem 3rem;
+    }
+
+    h2 {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      margin-bottom: 1.25rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .card {
+      display: block;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 2px 12px rgba(74, 32, 112, 0.08);
+    }
+
+    .card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+    }
+
+    .card .link {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .investments p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+    }
+
+    footer {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
+      text-align: center;
+      border-top: 1px solid var(--card-border);
+    }
+
+    footer p {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    @media (min-width: 540px) {
+      .portfolio .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  {{ content }}
+</body>
+</html>
